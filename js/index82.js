@@ -7,9 +7,9 @@ function exercise2 (event) {
                 document.createElement ( "h3" )
             )
         container.style = `color: magenta;`
-        let index = 0
+        var index = 0
         return function ( message ) {
-            var numb = index
+            let numb = index
             setTimeout (
                 () => {
                     container.textContent += message[numb]
