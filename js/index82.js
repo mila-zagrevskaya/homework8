@@ -9,7 +9,7 @@ function exercise2 (event) {
         container.style = `color: magenta;`
         var index = 0
         return function ( message ) {
-            var numb = index
+            let numb = index
             setTimeout (
                 () => {
                     container.textContent += message[numb]
