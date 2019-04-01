@@ -15,7 +15,7 @@ function exercise2 (event) {
                     container.textContent += message[numb]
                 }
            ,1000*velocity*numb) 
-            index++ < message.length -1 ? typeMessage (message) : null
+            index++ < message.length -1 ? arguments.callee (message) : null
         }
       })( 1 )
 

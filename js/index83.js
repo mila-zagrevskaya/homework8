@@ -7,7 +7,8 @@ function exercise3 (event) {
 
 	User.prototype.counter = (function (){
 		var id = 0
-		return function () { return typeof this.id === "number" ? id : id++ }
+		return function () { 
+			return typeof this.id === "number" ? id : id++ }
 	})()
 
 	var users = [
